@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const SkillsContainer = styled.div`
-  marginTop:30px;
+  margin-top:30px;
   margin: 0 auto;
   display: block;
   width: 80%;
