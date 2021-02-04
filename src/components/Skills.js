@@ -24,6 +24,11 @@ const SectionTitle = styled.h1`
         width:10%;
         padding: 3%;
         }
+      @media screen and (max-width: 768px){
+        img{
+           width:15%;
+        }
+      }
  `
 
 const Skills = () => {

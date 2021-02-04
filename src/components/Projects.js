@@ -35,10 +35,6 @@ const EachProject = styled.div`
   background: #fff;
   border-radius: 1rem;
   padding: 1rem 2rem;
-  border: 3px solid red;
-
-
- 
 `;
 
   const ProjectTitle =styled.h1`

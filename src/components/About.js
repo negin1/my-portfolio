@@ -25,16 +25,6 @@ const AboutText = styled.div`
      @media  screen and(min-width: 500px) and (max-width: 800px) {
         display: block;
     }
-
-    
-
-
-
-
-
-
-
-
 `;
 
 const AbooutTitle = styled.h1`
@@ -43,24 +33,21 @@ const AbooutTitle = styled.h1`
  font-weight:bold;
 
     @media screen and (max-width: 768px){
-      border: 1px solid red;
-      float: left;
-      margin-right: 5px; 
-      padding: 12px;
+      font-size: 40px;
+      
       position: relative; 
-      width: 450px; 
     }
  `;
-const AboutSubheading = styled.p`
-  font-size: 40px;
-  
+
+const AboutSubheading = styled.h2`
+  font-size: 35px;
   font-weight:bold;
   padding-bottom: 10px;
 
      @media screen and (max-width: 768px){
-      border: 1px solid red;
       position: relative; 
-      width: 450px; 
+      width: 600px; 
+      font-size: 30px;
     }
  `;
 
@@ -70,11 +57,9 @@ const AboutSubheading = styled.p`
     line-height: 2em;
   
      @media screen and (max-width: 768px){
-      border: 1px solid red;
-      padding:15px;
       margin-top:px;
       position: relative; 
-      width: 450px; 
+      width: 550px; 
     }
  `;
 
@@ -85,8 +70,9 @@ const AboutSubheading = styled.p`
       width: 40; 
       padding:15px;
       margin-top:px;
-      position: relative; 
-      width: 450px; 
+      position: relative;
+      display: block; 
+      margin: 0 auto;
     }
  `;
 
