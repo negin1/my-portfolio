@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+
 const SkillsContainer = styled.div`
   margin-top:30px;
   margin: 0 auto;

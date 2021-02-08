@@ -59,7 +59,7 @@ const AboutSubheading = styled.h2`
      @media screen and (max-width: 768px){
       margin-top:px;
       position: relative; 
-      width: 550px; 
+      width: 504px; 
     }
  `;
 
