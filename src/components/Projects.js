@@ -17,11 +17,10 @@ const SectionTitle = styled.h1`
   padding-bottom: 20px
 `
 
-const ProjectRow = styled.div`
-  
+ const ProjectRow = styled.div`
   display: flex;
   justify-content: center;
-  `;
+  `; 
 
 /* const Test = styled.div`
   border: 2px solid blue;
@@ -37,6 +36,7 @@ const ProjectRow = styled.div`
 
 const EachProject = styled.div`
   background-color: #fff;
+  display:flex;
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
@@ -44,15 +44,30 @@ const EachProject = styled.div`
 `;
 
   const ProjectTitle =styled.h1`
-    font-size: 25px;
-     padding: 20px;
-   text-align: center
+  font-size: 25px;
+  padding: 20px;
+  text-align: center
   `;
 
 const ProjectDescription = styled.p`
  font-size: 18px;
  padding: 15px
 `;
+
+const ProjectImg = styled.img`
+  border: 0.5px solid black;
+  display:flex;
+  justify-content: center;
+  `;
+
+
+const ProjectDiv = styled.div`
+    width: 100px;
+    height: 100px;
+    border:1px solid red;
+   
+  `;
+
 
 
 const Button = styled.button`
@@ -74,20 +89,10 @@ const Button = styled.button`
     -webkit-transition: background-color 2s ease-out;
     -moz-transition: background-color 2s ease-out;
     -o-transition: background-color 2s ease-out;
-    transition: background-color 2s ease-out;
-      
+    transition: background-color 2s ease-out;   
    }
-
 `;
 
-const ProjectImg = styled.img`
-
-  border: 0.5px solid black;
-  display:flex;
-  
-  width: 100px;
-  height: 100px;
-  `;
 
  
 
@@ -123,7 +128,10 @@ const Projects = () => {
                 <div className="each-project" key={projects.id}>
                 <ProjectTitle>{eachProject.title}</ProjectTitle>
                 <ProjectDescription>{eachProject.description}</ProjectDescription>
+                <ProjectDiv>
                 <ProjectImg src={eachProject.img}></ProjectImg> 
+                </ProjectDiv>
+
                   <Button><a href={eachProject.github} target="_blank"
                    className="githubLink">Code <i class="fab fa-github"></i> </a></Button>
                                  

@@ -54,6 +54,9 @@ const SectionTitle = styled.h1`
         padding-top: 100px;
     }
  `;
+
+  const SocialMedia = styled.div`
+  `
  
  
 const Skills = () => {
@@ -73,6 +76,13 @@ const Skills = () => {
         <Contact> 
         To see my skills in ation, cheek out my porrtfolio or  <a href="mailto:negin.jalalian@gmail.com?subject= get in though">  drop me an email </a> and tell me about your project idea! 
     </Contact>
+
+    <SocialMedia>
+  
+    <a href="https://www.linkedin.com/in/negin-jalalian-68324824/"> <i class="fab fa-linkedin-in"></i> </a>
+
+
+    </SocialMedia>
 
     </SkillsContainer>
   )
