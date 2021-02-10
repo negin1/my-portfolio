@@ -83,8 +83,8 @@ function About() {
   return (
       <AboutContainer>
         <AboutText>
-          <AbooutTitle>Hi, I'm Negin J,</AbooutTitle>
-            <AboutSubheading>a Fronend Developer from Stockholm.</AboutSubheading>
+          <AbooutTitle>Hi, I'm Negin J.</AbooutTitle>
+            <AboutSubheading>a Fronend Developer from Stockholm</AboutSubheading>
             <AaboutDescription>
               <p>I love working with new technologies and learn something new everyday. </p> 
               <p>Currently my main point of expertise is Fronend Development with a  focus on React.</p>

@@ -34,7 +34,7 @@ const SectionTitle = styled.h1`
            width:15%;
         }
       }
- `
+ `;
 
  const Contact = styled.div`
     display: flex;
@@ -56,7 +56,18 @@ const SectionTitle = styled.h1`
  `;
 
   const SocialMedia = styled.div`
-  `
+  display: flex;
+  justify-content: center;
+
+  margin: 100px 20px; a{
+        color: black;
+        font-weight:bold;
+        line-height: 1em;
+        padding: 0 10px 0 10px;
+        font-size: 25px;
+      
+    }
+  `;
  
  
 const Skills = () => {
@@ -74,13 +85,14 @@ const Skills = () => {
         </SkillsImg>
 
         <Contact> 
-        To see my skills in ation, cheek out my porrtfolio or  <a href="mailto:negin.jalalian@gmail.com?subject= get in though">  drop me an email </a> and tell me about your project idea! 
+       To see my skills in action, check out my       
+       <a href="https://github.com/negin1/my-portfolio">portfolio </a>. I would love to hear from you so please drop me an <a href="mailto:negin.jalalian@gmail.com?subject= get in though">  email </a> and tell me about your project idea!
     </Contact>
 
-    <SocialMedia>
-  
-    <a href="https://www.linkedin.com/in/negin-jalalian-68324824/"> <i class="fab fa-linkedin-in"></i> </a>
+    <SocialMedia>  
+    <a href="https://www.linkedin.com/in/negin-jalalian-68324824/"  target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
 
+    <a href="https://github.com/negin1"  target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> </a>
 
     </SocialMedia>
 

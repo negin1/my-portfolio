@@ -40,6 +40,7 @@ const EachProject = styled.div`
   border-radius: 10px;
   box-sizing: border-box;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+   
 
 `;
 
@@ -54,25 +55,22 @@ const ProjectDescription = styled.p`
  padding: 15px
 `;
 
-const ProjectImg = styled.img`
-  border: 0.5px solid black;
-  display:flex;
-  justify-content: center;
-  `;
-
-
 const ProjectDiv = styled.div`
-    width: 100px;
-    height: 100px;
+    width: 300px;
+    height: 200px;
     border:1px solid red;
+    margin: 0 auto;
    
   `;
-
+const ProjectImg = styled.img`
+  border: 0.5px solid black;
+  width: 100%;
+  `;
 
 
 const Button = styled.button`
   display: block;
-  justify-content: center; 
+ 
   background-color: #16e0bd;
   color: #fff;
   font-size: 0.9rem;
@@ -80,7 +78,7 @@ const Button = styled.button`
   border-radius: 5px;
   height: 30px;
   padding: 0 20px;
-  margin:20px 20px;
+  margin:20px auto;
   cursor: pointer;
   box-sizing: border-box;
    &:hover {
@@ -90,6 +88,10 @@ const Button = styled.button`
     -moz-transition: background-color 2s ease-out;
     -o-transition: background-color 2s ease-out;
     transition: background-color 2s ease-out;   
+   }
+   a{
+     color: white;
+     font-size: 14px;
    }
 `;
 
@@ -103,17 +105,19 @@ const projects = [
          github:"https://www.google.com/" }, 
 
       { id: 2,
-        title: "The Quire Notebook",
-        description: "The applcation is written in vanila JS. The rich text editor library CK Editor 5 was used to develop the notebook.",
-        github:"https://github.com/Zztorp/fe20tp1_marker",
-        img:"/images/quire.jpg"
-      
+
+        title: "Portfolio Website", 
+        description: "This portfolio website is the first website I created in  React.", 
+        github:"https://github.com/negin1/my-portfolio" 
+
         }, 
 
       { id: 3, 
-        title: "Portfolio Website", 
-        description: "This portfolio website is the first website I created in  React.", 
-        github:"https://www.google.com/" } 
+         title: "The Quire Notebook",
+        description: "This notebook  is written in vanila JS. The text editor library CK Editor 5 was used to develop the notebook.",
+        github:"https://github.com/Zztorp/fe20tp1_marker",
+        img:"/images/quire.jpg"
+        } 
     ];
 
 const Projects = () => {
@@ -131,10 +135,8 @@ const Projects = () => {
                 <ProjectDiv>
                 <ProjectImg src={eachProject.img}></ProjectImg> 
                 </ProjectDiv>
-
                   <Button><a href={eachProject.github} target="_blank"
-                   className="githubLink">Code <i class="fab fa-github"></i> </a></Button>
-                                 
+                   className="githubLink">Code <i class="fab fa-github"></i> </a></Button>            
         
               </div>
               </EachProject>
