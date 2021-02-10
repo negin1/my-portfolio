@@ -10,8 +10,12 @@ const SkillsContainer = styled.div`
  `;
 
 const SectionTitle = styled.h1`
-  text-align: center;
-  margin: 20px 20px;
+  font-family: roboto;
+  font-size: 40px;
+  margin:20px 20px;
+  text-align:center;
+  font-weight:bold;
+  padding-bottom: 20px
 `;
 
 
@@ -32,6 +36,26 @@ const SectionTitle = styled.h1`
       }
  `
 
+ const Contact = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+      a{
+        color: black;
+        font-weight:bold;
+        line-height: 1em;
+        padding: 0 5px 0 5px;
+
+
+
+    }    @media screen and (max-width: 1200px){
+        display: block;
+        padding-top: 100px;
+    }
+ `;
+ 
+ 
 const Skills = () => {
   return (
     <SkillsContainer> 
@@ -45,6 +69,10 @@ const Skills = () => {
         <img src="/images/logos/github2.png" alt="github logo"/>
         <img src="/images/logos/git.png" alt="git logo"/>  
         </SkillsImg>
+
+        <Contact> 
+        To see my skills in ation, cheek out my porrtfolio or  <a href="mailto:negin.jalalian@gmail.com?subject= get in though">  drop me an email </a> and tell me about your project idea! 
+    </Contact>
 
     </SkillsContainer>
   )

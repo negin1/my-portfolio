@@ -13,7 +13,7 @@ import Context from './Context'
     <div>
     
       <div className="weather-data">
-  <p className="weather__tagline">Weather information for <span className="weather-data__city">{}</span></p>
+  <p className="weather__tagline">Weather information for <span className="weather-data__city">{city}</span></p>
   <div className="weather-data__box">
     <span className="weather-data__property">
       <p className="weather-data__title">Temperature</p>

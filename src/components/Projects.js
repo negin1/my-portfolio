@@ -10,7 +10,11 @@ const ProjecrContainer = styled.div`
   `;
 
 const SectionTitle = styled.h1`
-text-align: center
+  font-size: 40px;
+  margin:20px 20px;
+  text-align:center;
+  font-weight:bold;
+  padding-bottom: 20px
 `
 
 const ProjectRow = styled.div`
@@ -32,45 +36,69 @@ const ProjectRow = styled.div`
 
 
 const EachProject = styled.div`
-  background: #fff;
-  border-radius: 1rem;
-  padding: 1rem 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
+
 `;
 
   const ProjectTitle =styled.h1`
     font-size: 25px;
+     padding: 20px;
    text-align: center
   `;
 
 const ProjectDescription = styled.p`
  font-size: 18px;
+ padding: 15px
+`;
+
+
+const Button = styled.button`
+  display: block;
+  justify-content: center; 
+  background-color: #16e0bd;
+  color: #fff;
+  font-size: 0.9rem;
+  border: 0;
+  border-radius: 5px;
+  height: 30px;
+  padding: 0 20px;
+  margin:20px 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+   &:hover {
+    background-color: green;
+    cursor: pointer;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+      
+   }
+
 `;
 
 const ProjectImg = styled.img`
 
-  margin: 15px 15px;
-  padding-bottom: 15px 15px;
-  justify-content: center;
-  width: 200px;
-  height: 200px;
+  border: 0.5px solid black;
+  display:flex;
+  
+  width: 100px;
+  height: 100px;
+  `;
 
-  `
-
- const GitBub = styled.a`
-  font-size: 20px;
-  text-decoration: none;
-  margin-top: 30px;
-  display: block;
-`;
+ 
 
 const projects = [
       { id: 1,
-        title: "Simple landing pages",
-        description: "This is a simlple landing page criated with HTML & CSS",
+        title: "Landing Page",
+        description: "This is a landing page criated with HTML & CSS.",
          github:"https://www.google.com/" }, 
 
       { id: 2,
-        title: "The Quire notebook",
+        title: "The Quire Notebook",
         description: "The applcation is written in vanila JS. The rich text editor library CK Editor 5 was used to develop the notebook.",
         github:"https://github.com/Zztorp/fe20tp1_marker",
         img:"/images/quire.jpg"
@@ -78,7 +106,7 @@ const projects = [
         }, 
 
       { id: 3, 
-        title: "Portfolio website", 
+        title: "Portfolio Website", 
         description: "This portfolio website is the first website I created in  React.", 
         github:"https://www.google.com/" } 
     ];
@@ -95,18 +123,15 @@ const Projects = () => {
                 <div className="each-project" key={projects.id}>
                 <ProjectTitle>{eachProject.title}</ProjectTitle>
                 <ProjectDescription>{eachProject.description}</ProjectDescription>
-                <ProjectImg src={eachProject.img}>
-                </ProjectImg> 
-                  <GitBub>
-                  <a href={eachProject.github} target="_blank"
-                   className="githubLink">Live at GitHub  <i class="fab fa-github"></i> </a>
-                   </GitBub>
-                 
+                <ProjectImg src={eachProject.img}></ProjectImg> 
+                  <Button><a href={eachProject.github} target="_blank"
+                   className="githubLink">Code <i class="fab fa-github"></i> </a></Button>
+                                 
+        
               </div>
               </EachProject>
             ))}
           </div>
-      
         </ProjectRow>
     </ProjecrContainer>
     )
