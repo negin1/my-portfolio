@@ -34,7 +34,7 @@ const AbooutTitle = styled.h1`
 
     @media screen and (max-width: 768px){
       font-size: 40px;
-      
+       width: 600px; 
       position: relative; 
     }
  `;
@@ -46,8 +46,8 @@ const AboutSubheading = styled.h2`
 
      @media screen and (max-width: 768px){
       position: relative; 
-      width: 600px; 
-      font-size: 30px;
+      width: 450px; 
+      font-size: 20px;
     }
  `;
 
@@ -59,7 +59,7 @@ const AboutSubheading = styled.h2`
      @media screen and (max-width: 768px){
       margin-top:px;
       position: relative; 
-      width: 504px; 
+      width: 400px; 
     }
  `;
 
