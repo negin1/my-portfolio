@@ -95,25 +95,6 @@ const Button = styled.button`
    }
 `;
 
-const AricleWrapper= styled.div`
-   display:flex
-
-  `;
-
-  const Img  = styled.img`
-    display: flex;
-
-  `;
-  const Text= styled.div`
-    flex-direction:row;
-
-  `;
-
-  const But= styled.div`
-    flex-direction:row;
-
-  `;
-
 
  
 

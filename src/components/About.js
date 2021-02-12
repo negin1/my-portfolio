@@ -71,10 +71,7 @@ const AboutSubheading = styled.h2`
     border-radius: 50%;
 
 
-    
-   
    @media screen and (max-width: 768px){
-      width: 40%; 
       padding:15px;
       margin-top:px;
       position: relative;
