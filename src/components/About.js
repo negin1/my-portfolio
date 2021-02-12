@@ -24,6 +24,7 @@ const AboutText = styled.div`
   margin: 0 200px 60px 0;
      @media  screen and(min-width: 500px) and (max-width: 800px) {
         display: block;
+        width: 300px
     }
 `;
 
@@ -33,10 +34,13 @@ const AbooutTitle = styled.h1`
  font-weight:bold;
 
     @media screen and (max-width: 768px){
-      font-size: 40px;
+      font-size: 30px;
        width: 600px; 
       position: relative; 
     }
+
+
+     
  `;
 
 const AboutSubheading = styled.h2`
@@ -52,7 +56,7 @@ const AboutSubheading = styled.h2`
  `;
 
  const AaboutDescription  = styled.p`
-    font-size: 20px;
+    font-size: 25px;
     font-weight:bold;
     line-height: 2em;
   
@@ -65,9 +69,12 @@ const AboutSubheading = styled.h2`
 
  const AboutImg = styled.img`
     border-radius: 50%;
+
+
+    
    
    @media screen and (max-width: 768px){
-      width: 40; 
+      width: 40%; 
       padding:15px;
       margin-top:px;
       position: relative;
@@ -83,7 +90,7 @@ function About() {
   return (
       <AboutContainer>
         <AboutText>
-          <AbooutTitle>Hi, I'm Negin J.</AbooutTitle>
+          <AbooutTitle>Hi, I'm Negin J,</AbooutTitle>
             <AboutSubheading>a Fronend Developer from Stockholm</AboutSubheading>
             <AaboutDescription>
               <p>I love working with new technologies and learn something new everyday. </p> 

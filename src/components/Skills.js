@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 const SkillsContainer = styled.div`
-  margin-top:30px;
+  padding-top:150px;
   margin: 0 auto;
   display: block;
   width: 80%;
@@ -44,12 +44,8 @@ const SectionTitle = styled.h1`
       a{
         color: black;
         font-weight:bold;
-        line-height: 1em;
         padding: 0 5px 0 5px;
-
-
-
-    }    @media screen and (max-width: 1200px){
+        }    @media screen and (max-width: 1200px){
         display: block;
         padding-top: 100px;
     }
@@ -58,13 +54,13 @@ const SectionTitle = styled.h1`
   const SocialMedia = styled.div`
   display: flex;
   justify-content: center;
-
-  margin: 100px 20px; a{
+  margin: 100px 20px; 
+        a{
         color: black;
         font-weight:bold;
         line-height: 1em;
         padding: 0 10px 0 10px;
-        font-size: 25px;
+        font-size: 40px;
       
     }
   `;
@@ -77,8 +73,8 @@ const Skills = () => {
    
         <SkillsImg>
         <img src="/images/logos/html5.png" alt="html5 logo"/>
-        <img src="/images/logos/css3.png" alt="css3 logo"/>
-        <img src="/images/logos/js.png" alt="js logo"/>
+        <img src="/images/logos/css.png" alt="css3 logo" />
+        <img src="/images/logos/js.png" alt="js logo" />
         <img src="/images/logos/react.png" alt="react logo"/>
         <img src="/images/logos/github2.png" alt="github logo"/>
         <img src="/images/logos/git.png" alt="git logo"/>  

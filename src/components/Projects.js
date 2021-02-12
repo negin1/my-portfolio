@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 
 const ProjecrContainer = styled.div`
-
   width: 80%;
   margin: 0 auto;
   padding-top: 110px;
@@ -20,16 +19,10 @@ const SectionTitle = styled.h1`
  const ProjectRow = styled.div`
   display: flex;
   justify-content: center;
+  
   `; 
 
-/* const Test = styled.div`
-  border: 2px solid blue;
-  width: 1300vw;
-  max-width: 1800px;
-  margin: 5rem auto;
-  display: grid;
-  gap: 3rem;
-` */
+
 
 
 
@@ -47,36 +40,42 @@ const EachProject = styled.div`
   const ProjectTitle =styled.h1`
   font-size: 25px;
   padding: 20px;
-  text-align: center
+  text-align: center;
+ 
   `;
 
 const ProjectDescription = styled.p`
- font-size: 18px;
- padding: 15px
+ font-size: 20px;
+  line-height: 1.5 em;
+ padding: 20px 40px;
+ text-align:center;
+
+ 
 `;
 
 const ProjectDiv = styled.div`
     width: 300px;
     height: 200px;
-    border:1px solid red;
     margin: 0 auto;
-   
+
   `;
+
 const ProjectImg = styled.img`
-  border: 0.5px solid black;
   width: 100%;
+  border: 1px solid black;
+  margin-top:10%;
+   
   `;
 
 
 const Button = styled.button`
   display: block;
- 
   background-color: #16e0bd;
   color: #fff;
   font-size: 0.9rem;
   border: 0;
   border-radius: 5px;
-  height: 30px;
+  height: 40px;
   padding: 0 20px;
   margin:20px auto;
   cursor: pointer;
@@ -92,8 +91,28 @@ const Button = styled.button`
    a{
      color: white;
      font-size: 14px;
+     font-weight:bold;
    }
 `;
+
+const AricleWrapper= styled.div`
+   display:flex
+
+  `;
+
+  const Img  = styled.img`
+    display: flex;
+
+  `;
+  const Text= styled.div`
+    flex-direction:row;
+
+  `;
+
+  const But= styled.div`
+    flex-direction:row;
+
+  `;
 
 
  
@@ -101,14 +120,17 @@ const Button = styled.button`
 const projects = [
       { id: 1,
         title: "Landing Page",
-        description: "This is a landing page criated with HTML & CSS.",
-         github:"https://www.google.com/" }, 
+        description: "This landing page has been created  with HTML & CSS.",
+         github:"https://github.com/negin1/LandingPage",
+        img:"/images/happyRiding.png"
+      }, 
 
       { id: 2,
 
         title: "Portfolio Website", 
-        description: "This portfolio website is the first website I created in  React.", 
-        github:"https://github.com/negin1/my-portfolio" 
+        description: "This portfolio website is the first website I created with  React.", 
+        github:"https://github.com/negin1/my-portfolio",
+        img:"/images/portfolio.png"
 
         }, 
 
@@ -133,16 +155,22 @@ const Projects = () => {
                 <ProjectTitle>{eachProject.title}</ProjectTitle>
                 <ProjectDescription>{eachProject.description}</ProjectDescription>
                 <ProjectDiv>
+
                 <ProjectImg src={eachProject.img}></ProjectImg> 
                 </ProjectDiv>
                   <Button><a href={eachProject.github} target="_blank"
-                   className="githubLink">Code <i class="fab fa-github"></i> </a></Button>            
+                   className="githubLink">Code <i class="fab fa-github"></i> </a></Button>   
+                
         
               </div>
               </EachProject>
             ))}
           </div>
+
+
+         
         </ProjectRow>
+
     </ProjecrContainer>
     )
 }

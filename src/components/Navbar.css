@@ -1,4 +1,4 @@
-navbar {
+.navbar {
   background: #16e0bd;
   height: 80px;
   display: flex;
@@ -115,10 +115,10 @@ navbar {
   }
 
   .navbar-logo {
-    position: absolute;
     top: 0;
     left: 0;
     transform: translate(25%, 50%);
+    width: 100px;
   }
 
   .menu-icon {
