@@ -4,10 +4,10 @@ import styled from 'styled-components';
 
 const AboutContainer = styled.div`
   display: flex;
+  justify-content:center;
   margin: 0 auto;
-  justify-content: center;
   width: 80%;
-  padding-top: 200px;
+  padding-top: 140px;
 
   
     @media screen and (max-width: 1400px) {
@@ -20,81 +20,67 @@ const AboutContainer = styled.div`
     }
  `;
 
-const AboutText = styled.div`
-  margin: 0 200px 60px 0;
-     @media  screen and(min-width: 500px) and (max-width: 800px) {
-        display: block;
-        width: 300px
+
+const AboutContentBox =styled.div`
+  padding:70px;
+
+   @media  screen and(min-width: 500px) and (max-width: 800px) {
+        flex-direction: row;
+        justify-content: center;
+         margin: auto 0;
     }
 `;
 
+ const AboutImg = styled.img`
+   border-radius:50%;
+   width:  200px;
+   height: 200px;
+
+    
+ `;
+
+
 const AbooutTitle = styled.h1`
- font-size: 60px;
- margin-bottom: 4%;
- font-weight:bold;
-
-    @media screen and (max-width: 768px){
-      font-size: 30px;
-       width: 600px; 
-      position: relative; 
-    }
-
-
+    font-size: calc(20px + 10wv);
+    font-weight:bold;
+    margin-bottom: 18px; 
+  
+       @media  screen and(min-width: 500px) and (max-width: 800px) {
+      width:
      
+    }
  `;
 
 const AboutSubheading = styled.h2`
-  font-size: 35px;
-  font-weight:bold;
-  padding-bottom: 10px;
-
-     @media screen and (max-width: 768px){
-      position: relative; 
-      width: 450px; 
-      font-size: 20px;
-    }
+    font-size: calc(19px + 10wv);
+    font-weight:bold;
+    margin-bottom: 10px;
  `;
 
  const AaboutDescription  = styled.p`
-    font-size: 25px;
+    font-size: calc(18px + 2wv);
     font-weight:bold;
     line-height: 2em;
-  
-     @media screen and (max-width: 768px){
-      margin-top:px;
-      position: relative; 
-      width: 400px; 
-    }
- `;
-
- const AboutImg = styled.img`
-    border-radius: 50%;
-
-
-   @media screen and (max-width: 768px){
-      padding:15px;
-      margin-top:px;
-      position: relative;
-      display: block; 
-      margin: 0 auto;
     }
  `;
 
 
- 
+
 
 function About() {
   return (
       <AboutContainer>
-        <AboutText>
+        <AboutContentBox>
           <AbooutTitle>Hi, I'm Negin J,</AbooutTitle>
             <AboutSubheading>a Fronend Developer from Stockholm</AboutSubheading>
             <AaboutDescription>
               <p>I love working with new technologies and learn something new everyday. </p> 
               <p>Currently my main point of expertise is Fronend Development with a  focus on React.</p>
             </AaboutDescription>
-        </AboutText>
+       </AboutContentBox>
+        <AboutContentBox>
         <AboutImg src="/images/negin.jpg" alt="Negin" ></AboutImg>
+        </AboutContentBox>
      </AboutContainer>      
   );
 };

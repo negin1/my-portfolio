@@ -19,11 +19,7 @@ const SectionTitle = styled.h1`
  const ProjectRow = styled.div`
   display: flex;
   justify-content: center;
-  
   `; 
-
-
-
 
 
 
@@ -57,15 +53,14 @@ const ProjectDiv = styled.div`
     width: 300px;
     height: 200px;
     margin: 0 auto;
-
   `;
 
 const ProjectImg = styled.img`
   width: 100%;
   border: 1px solid black;
   margin-top:10%;
-   
   `;
+
 
 
 const Button = styled.button`
@@ -141,15 +136,11 @@ const Projects = () => {
                 </ProjectDiv>
                   <Button><a href={eachProject.github} target="_blank"
                    className="githubLink">Code <i class="fab fa-github"></i> </a></Button>   
-                
-        
+              
               </div>
               </EachProject>
             ))}
           </div>
-
-
-         
         </ProjectRow>
 
     </ProjecrContainer>

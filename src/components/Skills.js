@@ -41,14 +41,14 @@ const SectionTitle = styled.h1`
     align-items: center;
     justify-content: center;
     font-size: 20px;
-      a{
+       a{
         color: black;
         font-weight:bold;
-        padding: 0 5px 0 5px;
+        
         }    @media screen and (max-width: 1200px){
         display: block;
         padding-top: 100px;
-    }
+    } 
  `;
 
   const SocialMedia = styled.div`
