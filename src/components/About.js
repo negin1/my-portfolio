@@ -4,14 +4,16 @@ import styled from 'styled-components';
 
 const AboutContainer = styled.div`
   display: flex;
+  padding-top:130px;
   justify-content:center;
   flex-wrap:wrap;
   margin: 0 auto;
   width: 80%;
-  padding-top: 100px;
-   @media screen and (max-width: 768px){
-    padding-top: 60px;
-  } 
+
+    @media  screen and(min-width: 500px) and (max-width: 800px) {
+         padding-top: 10px;
+    }
+
  `;
 
  
@@ -22,7 +24,7 @@ const AboutContentBox =styled.div`
         flex-direction: row;
         justify-content: center;
         margin: auto 0;
-        padding: 10px 20px;
+        padding: 5px 20px;
     }
 `;
 
@@ -50,7 +52,7 @@ const AboutSubheading = styled.h2`
     margin-bottom: 10px;
  `;
 
- const AaboutDescription  = styled.p`
+ const AaboutDescription  = styled.div`
     font-size: calc(18px + 2wv);
     font-weight:bold;
     line-height: 2em;
@@ -60,7 +62,7 @@ function About() {
   return (
       <AboutContainer>
         <AboutContentBox>
-          <AbooutTitle>Hi, I'm Negin J,</AbooutTitle>
+          <AbooutTitle>Hi, I'm Negin J ,</AbooutTitle>
             <AboutSubheading>a Frontend Developer from Stockholm.</AboutSubheading>
             <AaboutDescription>
               <p>I love working with new technologies and learn something new everyday. </p> 

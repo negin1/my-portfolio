@@ -4,9 +4,8 @@ import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
  import './App.css';  
 import About from './components/pages/Home';
-import Projects from './components/Projects';
+import Project from './components/Project';
 import Skills from './components/Skills';
-
 
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route path='/' exact component={About} />
-        <Route path='/projects' component={Projects} />
+         <Route path='/project' component={Project}/>
         <Route path='/skills' component={Skills}/>
       </Switch>
     </Router>

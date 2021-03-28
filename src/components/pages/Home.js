@@ -1,14 +1,15 @@
 import React from 'react'
-/* import '../../App.css'; */
 import About from '../About';
-import Projects from '../Projects';
+import Project from '../Project';
 import Skills from '../Skills';
+
+
 
 function Home() {
   return (
     <div>
     <About />
-    <Projects />
+    <Project />
     <Skills />
     </div>
   );

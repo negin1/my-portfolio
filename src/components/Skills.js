@@ -38,7 +38,7 @@ const SectionTitle = styled.h1`
       }
  `;
 
- const Contact = styled.p`
+ const Contact = styled.div`
 
     text-align:center;
     font-size: calc(18px + 2wv);
@@ -83,15 +83,15 @@ const Skills = () => {
         </SkillsImg>
 
     <Contact> 
-      <p>To see my skills in action, check out my <a href="https://github.com/negin1/my-portfolio"  target="_blank"> portfolio</a>.</p>
+      <p>To see my skills in action, check out my <a href="https://github.com/negin1/my-portfolio"  target="_blank" rel="noreferrer"> portfolio</a>.</p>
       
       <p> I would love to hear from you, so please drop me an <a href="mailto:negin.jalalian@gmail.com?subject= get in though">  email </a> and tell me about your project idea!</p>
     </Contact>
         
 
     <SocialMedia>  
-    <a href="https://www.linkedin.com/in/negin-jalalian-68324824/"  target="_blank"> <i class="fab fa-linkedin-in"></i> </a>
-    <a href="https://github.com/negin1"  target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> </a>
+    <a href="https://www.linkedin.com/in/negin-jalalian-68324824/"  target="_blank" rel="noreferrer"> <i className="fab fa-linkedin-in"></i> </a>
+    <a href="https://github.com/negin1"  target="_blank" rel="noreferrer"> <i className="fa fa-github" aria-hidden="true" rel="noreferrer"></i> </a>
     </SocialMedia>
     </SkillsContainer>
   )
